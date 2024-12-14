@@ -41,7 +41,7 @@ export function HeroCarousel() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <div className="absolute z-100 w-[40vw] h-[40vh] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-self-blue/60 to-self-green/60 backdrop-blur-sm shadow-lg rounded-3xl flex flex-col justify-center items-center px-5 md:px-10">
+      <div className="absolute z-100 w-[40vw] h-[40vh] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-self-blue/50 to-self-green/50 backdrop-blur-sm shadow-lg rounded-3xl flex flex-col justify-center items-center px-5 md:px-10">
         <h1 className="font-semibold tracking-wider text-lg md:text-2xl text-center text-background">Selamat Datang di Website Mangesti Sejahtera</h1>
       </div>
       <CarouselPrevious />

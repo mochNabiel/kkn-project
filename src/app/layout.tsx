@@ -13,6 +13,10 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "Mangesti Sejahtera",
   description: "Website Mangesti Sejahtera",
+  icons: "/kabupaten-sukoharjo.png",
+  authors: [
+    {name: "ITB AAS KKN 2024"}
+  ],
 };
 
 export default function RootLayout({
@@ -27,7 +31,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
