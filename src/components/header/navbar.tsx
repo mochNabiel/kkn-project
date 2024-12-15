@@ -1,12 +1,8 @@
 import React from "react";
-import Link from "next/link";
 import {
   NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
   NavigationMenuList,
   NavigationMenuLink,
-  NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 
 const Navbar = () => {
