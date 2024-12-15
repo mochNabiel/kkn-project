@@ -89,7 +89,7 @@ const SectionInfo = () => {
       <div className="flex flex-col w-full md:w-1/4 gap-3">
         <h1 className="font-bold text-base">JADWAL PELAYANAN</h1>
         <div className="flex flex-col text-sm gap-2">
-          <p>Senin s/d Kamis : 08.00 - 15.00 WIB</p>
+          <p>Senin s&#x2F;d Kamis : 08.00 - 15.00 WIB</p>
           <p>Jum'at : 08.00 - 11.00 WIB</p>
           <p>Sabtu : Libur</p>
         </div>

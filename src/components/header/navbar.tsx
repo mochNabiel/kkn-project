@@ -3,6 +3,7 @@ import {
   NavigationMenu,
   NavigationMenuList,
   NavigationMenuLink,
+  NavigationMenuItem,
 } from "@/components/ui/navigation-menu";
 
 const Navbar = () => {
