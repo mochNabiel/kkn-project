@@ -14,9 +14,7 @@ export const metadata: Metadata = {
   title: "Mangesti Sejahtera",
   description: "Website Mangesti Sejahtera",
   icons: "/kabupaten-sukoharjo.png",
-  authors: [
-    {name: "ITB AAS KKN 2024"}
-  ],
+  authors: [{ name: "ITB AAS KKN 2024" }],
 };
 
 export default function RootLayout({
