@@ -1,5 +1,11 @@
+import PageHero from "@/components/page-hero";
+
 const GalleryPage = () => {
-  return ( <p className="mt-16">Galeri</p> );
-}
- 
+  return (
+    <main>
+      <PageHero text="Galeri BUMDes Mangesti Sejahtera" />
+    </main>
+  );
+};
+
 export default GalleryPage;

@@ -1,5 +1,11 @@
+import PageHero from "@/components/page-hero";
+
 const BusinessPage = () => {
-  return ( <p className="mt-16">Kegiatan Usaha</p> );
-}
- 
+  return (
+    <main>
+      <PageHero text="Kegiatan Usaha BUMDes Mangesti Sejahtera" />
+    </main>
+  );
+};
+
 export default BusinessPage;

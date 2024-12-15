@@ -5,7 +5,7 @@ import SectionSejarahDesa from "@/components/profil/section-sejarah-desa";
 
 const ProfilePage = () => {
   return ( <main>
-    <PageHero text="Profil Desa" />
+    <PageHero text="Profil BUMDes Mangesti Sejahtera" />
     <SectionVisiMisi />
     <SectionPerangkatDesa />
     <SectionSejarahDesa />

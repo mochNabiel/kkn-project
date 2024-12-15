@@ -8,32 +8,8 @@ import {
   NavigationMenuLink,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-import { cn } from "@/lib/utils";
 
-const Navbar = ({
-  onLinkClick,
-  isMobile,
-}: {
-  onLinkClick: () => void;
-  isMobile: boolean;
-}) => {
-  const profileComponents = [
-    { title: "Visi Misi", href: "/visi-misi" },
-    { title: "Perangkat Desa", href: "/perangkat-desa" },
-    { title: "Sejarah Desa", href: "/sejarah-desa" },
-  ];
-
-  const dataComponents = [
-    { title: "Data Pendidikan", href: "/data-pendidikan" },
-    { title: "Data Kesehatan", href: "/data-kesehatan" },
-    { title: "Data Kependudukan", href: "/data-kependudukan" },
-    { title: "Data Keuangan", href: "/data-keuangan" },
-  ];
-
-  const businessComponents = [
-    { title: "Pemilahan Sampah", href: "/pemilahan-sampah" },
-    { title: "Perdagangan Sembakau", href: "/perdagangan-sembakau" },
-  ];
+const Navbar = () => {
 
   const menuItems = [
     {
@@ -61,9 +37,8 @@ const Navbar = ({
   return (
     <NavigationMenu
       className="flex flex-col md:flex-row"
-      orientation={isMobile ? "vertical" : "horizontal"}
     >
-      <NavigationMenuList className="flex flex-col md:flex-row w-screen md:w-full bg-black py-3 md:bg-transparent">
+      <NavigationMenuList className="flex flex-col md:flex-row w-screen md:w-full bg-black/70 py-3 md:bg-transparent">
         {menuItems.map((item, index) => {
           return (
             <NavigationMenuItem key={index}>
