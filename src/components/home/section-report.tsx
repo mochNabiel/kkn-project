@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const SectionReport = () => {
   return (
-    <section className="flex flex-col gap-7 p-10">
+    <section className="flex flex-col gap-7 p-5 md:p-10">
       <TextTitle className="text-center">
         Grafik Laporan Pertanggungjawaban Tahun 2024
       </TextTitle>

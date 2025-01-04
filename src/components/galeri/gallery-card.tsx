@@ -9,7 +9,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 
-import {FullscreenIcon} from "lucide-react"
+import { FullscreenIcon } from "lucide-react";
 
 const GalleryCard = ({
   image,
@@ -27,17 +27,21 @@ const GalleryCard = ({
           <Image
             src={image}
             alt="gallery image"
-            className="w-full h- rounded-lg transition-transform duration-300 group-hover:scale-110 overflow-hidden"
+            className="w-full h-64 rounded-lg transition-transform duration-300 group-hover:scale-110 object-cover"
           />
           <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <FullscreenIcon className="w-8 h-8 text-white" />
           </div>
         </div>
       </DialogTrigger>
-      <DialogContent className="bg-transparent sm:max-w-[425px] md:max-w-[600px] lg:max-w-[800px]">
+      <DialogContent className="bg-transparent sm:max-w-[400px] md:max-w-[600px] lg:max-w-[700px] max-w-[90vw]">
         <DialogHeader>
           <DialogTitle>
-            <Image src={image} className="rounded-lg" alt="gallery image" />
+            <Image
+              src={image}
+              className="w-full h-auto aspect-video rounded-lg object-contain"
+              alt="gallery image"
+            />
           </DialogTitle>
           <DialogDescription className="text-gray-100">
             {title}

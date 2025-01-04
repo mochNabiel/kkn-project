@@ -34,7 +34,7 @@ const SectionService = () => {
   ];
 
   return (
-    <section className="flex flex-col gap-7 p-10">
+    <section className="flex flex-col gap-7 p-5 md:p-10">
       <TextTitle className="text-center">Layanan Kami</TextTitle>
       <div className="flex flex-col md:flex-row gap-5">
         {services.map((service) => (

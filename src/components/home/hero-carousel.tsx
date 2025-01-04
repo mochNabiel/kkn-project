@@ -26,11 +26,11 @@ export function HeroCarousel() {
   return (
     <Carousel
       plugins={[plugin.current]}
-      className="w-full h-full relative"
+      className="w-full h-[70vh] md:h-[80vh] relative"
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
     >
-      <CarouselContent className="h-screen">
+      <CarouselContent className="h-[70vh] md:h-[80vh]">
         {carouselImages.map((image, index) => (
           <CarouselItem className="h-full" key={index}>
             <Image
@@ -41,11 +41,17 @@ export function HeroCarousel() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <div className="absolute z-100 w-[40vw] h-[40vh] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-self-blue/50 to-self-green/50 backdrop-blur-sm shadow-lg rounded-3xl flex flex-col justify-center items-center px-5 md:px-10">
-        <h1 className="font-semibold tracking-wider text-lg md:text-2xl text-center text-background">Selamat Datang di Website Mangesti Sejahtera</h1>
+
+      {/* Carousel Text */}
+      <div className="absolute z-100 w-[90vw] sm:w-[80vw] md:w-[60vw] lg:w-[50vw] px-8 md:px-10 lg:px-12 py-12 md:py-14 lg:py-16 h-auto top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-self-blue/50 to-self-green/50 backdrop-blur-sm shadow-lg rounded-3xl flex flex-col justify-center items-center">
+        <h1 className="font-semibold tracking-wider text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-center text-background">
+          Selamat Datang di Website Mangesti Sejahtera
+        </h1>
       </div>
-      <CarouselPrevious />
-      <CarouselNext />
+
+      {/* Tombol Previous dan Next */}
+      <CarouselPrevious className="hidden md:flex" />
+      <CarouselNext className="hidden md:flex" />
     </Carousel>
   );
 }

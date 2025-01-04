@@ -5,7 +5,7 @@ import { officers } from "@/constant/officers";
 
 const SectionPerangkatDesa = () => {
   return (
-    <section className="my-20 px-10">
+    <section className="my-20 px-5 md:px-10">
       <TextTitle className="text-center mb-10">
         DAFTAR KEPALA DESA, PERANGKAT DESA DAN STAFF
       </TextTitle>

@@ -7,7 +7,7 @@ import kantorDesaGentan from "@/assets/images/Kantor-desa-gentan-baki-sukoharjo.
 
 const SectionSejarahDesa = () => {
   return (
-    <section className="my-20 px-10">
+    <section className="my-20 px-5 md:px-10">
       <TextTitle className="text-center mb-10">SEJARAH DESA GENTAN</TextTitle>
       <Card className="flex flex-col items-start justify-center">
         <CardHeader className="mx-auto">
@@ -18,7 +18,7 @@ const SectionSejarahDesa = () => {
           />
         </CardHeader>
         <CardContent>
-          <p className="text-justify columns-1 md:columns-2 gap-x-10">
+          <p className="text-justify columns-1 md:columns-2 gap-x-10 text-sm md:text-base lg:text-lg">
             Desa Gentan, terletak di lereng utara Gunung Gedhe Gajah Mungkur,
             memiliki sejarah panjang yang dimulai dari era kepemimpinan tokoh
             sakti Kyai Bas di Dukuh Baseng. Kisah ini bermula dengan adanya

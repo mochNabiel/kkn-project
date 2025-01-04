@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const SectionAboutUs = () => {
   return (
-    <section className="flex flex-col md:flex-row gap-10 md:gap-5 p-10">
+    <section className="flex flex-col md:flex-row gap-10 md:gap-5 p-5 md:p-10">
       <div className="flex w-full md:w-1/2 flex-col justify-center items-center md:items-start text-justify md:text-left gap-5">
         <TextTitle>Tentang Kami</TextTitle>
         <p>
@@ -17,7 +17,9 @@ const SectionAboutUs = () => {
           Gentan
         </p>
         <Link href="/profil">
-          <Button className="max-w-max">SELENGKAPNYA</Button>
+          <Button className="max-w-max bg-gradient-to-r from-self-blue/80 to-self-green/80 hover:from-self-blue hover:to-self-green">
+            SELENGKAPNYA
+          </Button>
         </Link>
       </div>
       <div className="w-full md:w-1/2">

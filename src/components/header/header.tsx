@@ -15,7 +15,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 z-50 w-full px-10 backdrop-blur-md shadow-lg flex justify-between items-center h-16 bg-gradient-to-r from-self-blue/60 to-self-green/60 text-gray-100 tracking-wider">
+    <header className="fixed top-0 left-0 z-50 w-full px-5 md:px-10 backdrop-blur-md shadow-lg flex justify-between items-center h-16 bg-gradient-to-r from-self-blue/60 to-self-green/60 text-gray-100 tracking-wider">
       <LogoWithText />
       <div className="md:hidden">
         <button

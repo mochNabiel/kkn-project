@@ -39,7 +39,7 @@ const SectionInfo = () => {
 
   return (
     <section className="flex flex-col md:flex-row gap-5 tracking-wide text-gray-100">
-      <div className="flex flex-col w-full md:w-1/4 gap-3">
+      <div className="flex flex-col w-full md:w-1/4 gap-3 mb-8 md:mb-0 md:-mt-3">
         <LogoWithText />
         <p className="text-[14px]">
           Jl. Raya Songgo Langit No. 4 Desa Gentan, Kecamatan Baki, Kabupaten
@@ -63,7 +63,7 @@ const SectionInfo = () => {
           ))}
         </div>
       </div>
-      <div className="flex flex-col w-full md:w-1/4 gap-3">
+      <div className="flex flex-col w-full md:w-1/4 gap-3 mb-8 md:mb-0">
         <h1 className="font-bold text-base">LINK TERKAIT</h1>
         <div className="flex flex-col text-sm gap-2">
           <Link
@@ -86,7 +86,7 @@ const SectionInfo = () => {
           </Link>
         </div>
       </div>
-      <div className="flex flex-col w-full md:w-1/4 gap-3">
+      <div className="flex flex-col w-full md:w-1/4 gap-3 mb-8 md:mb-0">
         <h1 className="font-bold text-base">JADWAL PELAYANAN</h1>
         <div className="flex flex-col text-sm gap-2">
           <p>Senin s&#x2F;d Kamis : 08.00 - 15.00 WIB</p>
