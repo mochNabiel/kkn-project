@@ -3,9 +3,10 @@
 import * as React from "react";
 import Autoplay from "embla-carousel-autoplay";
 
-import stadionManahan from "@/assets/images/hero-stadion.jpg";
-import keratonSolo from "@/assets/images/keraton-solo.jpeg";
-import soloSafari from "@/assets/images/solo-safari.jpg";
+import kantorGentan from "@/assets/images/Kantor-desa-gentan-baki-sukoharjo.jpeg";
+import luwesGentan from "@/assets/images/luwes-gentan.jpg";
+import patungJamu from "@/assets/images/patung-jamu-gendong-3350169538.webp";
+import kantorSukoharjo from "@/assets/images/kantor-sukoharjo.jpeg";
 
 import {
   Carousel,
@@ -21,16 +22,16 @@ export function HeroCarousel() {
     Autoplay({ delay: 2000, stopOnInteraction: true })
   );
 
-  const carouselImages = [stadionManahan, keratonSolo, soloSafari];
+  const carouselImages = [kantorGentan, luwesGentan, patungJamu, kantorSukoharjo];
 
   return (
     <Carousel
       plugins={[plugin.current]}
-      className="w-full h-[70vh] md:h-[80vh] relative"
+      className="w-full h-[70vh] md:h-[85vh] relative"
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
     >
-      <CarouselContent className="h-[70vh] md:h-[80vh]">
+      <CarouselContent className="h-[70vh] md:h-[85vh]">
         {carouselImages.map((image, index) => (
           <CarouselItem className="h-full" key={index}>
             <Image
